@@ -16,6 +16,8 @@ interface IUser{
 
 Intersection ব্যবহার করে টাইপ extend করা যায়:
 
+
+
 interface IUserWithRole extends IUser{
     role: "Admin" | "user"
 }
@@ -54,6 +56,7 @@ interface IUserWithRole extends IUser {
 }
 
 // Union Type: হতে পারে IUser বা IUserWithRole
+
 type User = IUser | IUserWithRole;
 
 
@@ -75,6 +78,9 @@ interface IRole {
 }
 
 // Intersection Type: IUser + IRole
+
+
+
 type User = IUser & IRole;
 
 
